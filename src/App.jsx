@@ -10,25 +10,22 @@ function Header(){
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
         <h1>Introduction à React</h1>
+        <h2>A la découverte des premières notions de React</h2>
       </div>
   );
 }
+function MainContent(){
+  return (
+  <p>Ici nous afficherons des informations intéressantes</p>
+  );
 
+}
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
       <Header />
-      <h1>MBDS+EMSI</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
+      <MainContent />
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>

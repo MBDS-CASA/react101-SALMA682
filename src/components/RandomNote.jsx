@@ -31,7 +31,7 @@ export default function RandomNote() {
 
   return (
     <div style={{ textAlign: "center" }}>
-      <h1>TD03 : Détails d'une note aléatoire</h1>
+      <h1>Détails d'une note aléatoire</h1>
       <NoteCard note={randomNote} />
       <button onClick={() => setRandomNote(getRandomItem(data))}>
         Afficher une autre note aléatoire

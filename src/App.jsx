@@ -5,13 +5,13 @@ import './App.css'
 
 function Header(){
   return(
-    <div>
+    <header>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
         <h1>Introduction à React</h1>
         <h2>A la découverte des premières notions de React</h2>
-      </div>
+      </header>
   );
 }
 function MainContent(){
@@ -20,15 +20,25 @@ function MainContent(){
   );
 
 }
+function Footer() {
+  return (
+    <footer style={{
+      textAlign: 'center',
+      marginTop: '40px',
+      padding: '10px 0',
+      borderTop: '1px solid #ccc'
+    }}>
+      Tous droits réservés - [Ighirouaiour] [Salma]
+    </footer>
+  );
+}
 function App() {
 
   return (
     <>
       <Header />
       <MainContent />
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Footer />
     </>
   )
 }

@@ -1,4 +1,4 @@
-import data from "../data/data.json";
+import data from "../data.json"; 
 import {
   Table, TableBody, TableCell, TableContainer,
   TableHead, TableRow, Paper
@@ -15,11 +15,11 @@ function Etudiants() {
   return (
     <TableContainer component={Paper}>
       <Table>
-        <TableHead>
+        <TableHead sx={{ backgroundColor: '#007bff' }}>
           <TableRow>
-            <TableCell>ID</TableCell>
-            <TableCell>Prénom</TableCell>
-            <TableCell>Nom</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>ID</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Prénom</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Nom</TableCell>
           </TableRow>
         </TableHead>
 

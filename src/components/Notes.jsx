@@ -1,5 +1,5 @@
 import * as React from "react";
-import data from "../data/data.json";
+import data from "../data.json"; 
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
@@ -12,12 +12,12 @@ function Notes() {
   return (
     <TableContainer component={Paper}>
       <Table>
-        <TableHead>
+        <TableHead sx={{ backgroundColor: '#007bff' }}>
           <TableRow>
-            <TableCell>Étudiant</TableCell>
-            <TableCell>Matière</TableCell>
-            <TableCell>Date</TableCell>
-            <TableCell>Note</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Étudiant</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Matière</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Date</TableCell>
+            <TableCell sx={{ color: 'white', fontWeight: 'bold' }}>Note</TableCell>
           </TableRow>
         </TableHead>
 

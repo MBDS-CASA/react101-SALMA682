@@ -1,22 +1,16 @@
-import { useState } from 'react'
+import { BrowserRouter } from "react-router-dom";
+import Header from "./components/Header.jsx";
+import MenuContent from "./components/MenuContent.jsx";
+import Footer from "./components/Footer.jsx";
 
-import './App.css'
-
-
-import Header from './components/Header.jsx';
-import MainContent from './components/MainContent.jsx';
-import Footer from './components/Footer.jsx';
-import RandomNote from "./components/RandomNote.jsx";
 function App() {
-
   return (
-    <>
+<>
       <Header />
-      <MainContent />
-      <RandomNote />
+      <MenuContent />
       <Footer />
-    </>
-  )
+      </>
+  );
 }
 
-export default App
+export default App;
